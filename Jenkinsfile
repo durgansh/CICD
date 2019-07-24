@@ -11,7 +11,7 @@ pipeline {
     }
     stage('Build') {
       steps {
-        dir(path: "D:\T3-Jul2019\CICD\HelloWorld\recipes") {
+        dir('/opt/CICD/HelloWorld/recipes') {
           sh 'mvn -Dmaven.test.failure.ignore=true -U clean install'
         }
 
