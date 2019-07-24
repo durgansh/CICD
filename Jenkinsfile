@@ -17,13 +17,6 @@ pipeline {
 
       }
     }
-    stage('Deploy') {
-      steps {
-        dir(path: "D:\T3-Jul2019\CICD\HelloWorld\recipes") {
-          sh 'mvn spring-boot:run'
-        }
-
-      }
-    }
+    
   }
 }
